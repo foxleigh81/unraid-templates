@@ -1,0 +1,32 @@
+<Container>
+    <Name>Strip-AI</Name>
+    <Repository>foxleigh81/strip-ai</Repository>
+    <Registry>https://hub.docker.com/r/foxleigh81/strip-ai</Registry>
+    <Project>https://strip-ai.spacenectar.io</Project>
+    <Overview>Strip-AI is a lightweight tool to normalize AI-generated text formatting — removes
+        em/en dashes, smart quotes, extra spaces, and emoji.</Overview>
+    <Description>A tiny static web tool that cleans up AI-influenced quirks like curly quotes,
+        em-dashes, smart apostrophes, and optional emoji from text. Built with React and served via
+        Docker using nginx.</Description>
+    <Support>https://github.com/foxleigh81/strip-ai</Support>
+    <Category>Productivity:</Category>
+    <Networking>bridge</Networking>
+    <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+    <Icon>https://strip-ai.spacenectar.io/favicon-96x96.png</Icon>
+    <TemplateURL>
+        https://raw.githubusercontent.com/foxleigh81/unraid-templates/main/templates/foxleigh81/strip-ai.xml</TemplateURL>
+    <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+    </Port>
+    <Environment>
+        <Variable>
+            <Name>NODE_ENV</Name>
+            <Value>production</Value>
+            <Description>Set environment mode</Description>
+        </Variable>
+    </Environment>
+    <DonateText>Support me on Ko-fi</DonateText>
+    <DonateLink>https://ko-fi.com/foxleigh81</DonateLink>
+</Container>
